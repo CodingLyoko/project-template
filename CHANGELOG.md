@@ -1,2 +1,3 @@
 ## Version X.Y.Z
-- TEMP
+- TODO: Update Constants.java to reflect project name
+- TODO: Update the README (if required)
