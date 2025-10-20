@@ -39,8 +39,13 @@ public class WindowHandler {
 
         makeWindowDraggable(mainScene, mainStage);
 
+        /*
+         * Uncomment this code if the project uses any secondary window(s). This code
+         * will initialize that window (which will be re-used for any other secondary
+         * windows)
+         */
         // Popup Window
-        popupScene = new Scene(FXMLHandler.getFxmlInstances().get(FXMLFilenames.EXAMPLE_FXML_FILE).root); // Default Scene
+        /*popupScene = new Scene(FXMLHandler.getFxmlInstances().get(FXMLFilenames.EXAMPLE_FXML_FILE).root); // Default Scene
         popupScene.setFill(Color.TRANSPARENT);
         popupScene.getStylesheets().add(WindowHandler.class.getResource("/css/application.css").toExternalForm());
 
@@ -49,7 +54,7 @@ public class WindowHandler {
         popupStage.initStyle(StageStyle.TRANSPARENT);
         popupStage.setScene(popupScene);
 
-        makeWindowDraggable(popupScene, popupStage);
+        makeWindowDraggable(popupScene, popupStage);*/
         
         mainStage.centerOnScreen();
     }

@@ -24,9 +24,17 @@ public class App extends Application {
 
         initFXML();
         WindowHandler.initWindows(stage);
-        SoundHandler.initialize();
 
-        stage.initStyle(StageStyle.TRANSPARENT);
+        /*
+         * Uncomment this line of code when ready to utilize sound files
+         */
+        // SoundHandler.initialize();
+
+        /*
+         * This code is here to show that the style of the Window can be modified. If
+         * not modiying the style, remove this code.
+         */
+        // stage.initStyle(StageStyle.TRANSPARENT);
 
         stage.show();
     }
@@ -35,7 +43,7 @@ public class App extends Application {
         launch();
     }
 
-     /**
+    /**
      * Initializes the FXML files/controllers for the app. Each FXML is tracked in
      * the FXMLFilenames enum.
      * 
